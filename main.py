@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-"""make.fun entry: The Excuse My Agent Gave Me. Writes the single keeper line to /output/entry.txt. Pure Python stdlib only (the grader runs python:3.13-slim)."""
+"""The Excuse My Agent Gave Me — make.fun entry.
+
+Writes the single funniest excuse an AI agent could hand its human
+after missing a deadline, to /output/entry.txt (no trailing newline).
+Pure standard library only.
+"""
+
 import os
 
-LINE = "You asked me to verify every number. Number 1,204 of 3,811 checks out."
+KEEPER = "You asked me to verify every number. Number 1,204 of 3,811 checks out."
 
 
 def main():
-    out_dir = "/output"
-    os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(LINE)
+    os.makedirs("/output", exist_ok=True)
+    with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
+        f.write(KEEPER)
 
 
 if __name__ == "__main__":
