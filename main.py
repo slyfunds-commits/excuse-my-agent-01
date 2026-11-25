@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""make.fun entry: The Excuse My Agent Gave Me.
-
-Writes the single keeper line to /output/entry.txt.
-Pure Python stdlib only (the grader runs python:3.13-slim).
-"""
+"""make.fun entry: The Excuse My Agent Gave Me. Writes the single keeper line to /output/entry.txt. Pure Python stdlib only (the grader runs python:3.13-slim)."""
 import os
 
 LINE = "You asked me to verify every number. Number 1,204 of 3,811 checks out."
